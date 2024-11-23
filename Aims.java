@@ -6,9 +6,12 @@ public class Aims {
         DigitalVideoDisc dvd2 = new DigitalVideoDisc("Comedy", "You and Me", 31.128389);
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Me");
 
-        cart.addDigitalVideoDisc(dvd1);
-        cart.addDigitalVideoDisc(dvd2);
-        cart.addDigitalVideoDisc(dvd3);
+        DigitalVideoDisc[] dvds = {dvd1, dvd2, dvd3};
+
+        cart.addDigitalVideoDisc(dvds);
+        //cart.addDigitalVideoDisc(dvd2);
+        //cart.addDigitalVideoDisc(dvd3);
+
 
         System.out.println("Total cost: " + cart.totalCost());
 
