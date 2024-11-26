@@ -1,8 +1,8 @@
-package src.hust.soict.dsai.aims.cart;
+package AimsProject.src.hust.soict.dsai.aims.cart;
 import java.util.ArrayList;
 import java.util.List;
 
-import src.hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import AimsProject.src.hust.soict.dsai.aims.disc.DigitalVideoDisc;
 
 public class Cart {
     private List<DigitalVideoDisc> items = new ArrayList<>();
