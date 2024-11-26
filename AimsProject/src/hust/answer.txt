@@ -1,0 +1,6 @@
+
+Mặc dù cả hai phương pháp đều hợp lệ, nhưng việc sử dụng đối số biến số (varargs) như trong DigitalVideoDisc... được ưu tiên hơn nhờ tính tiện lợi và linh hoạt của nó. Phương pháp này giúp việc gọi phương thức trở nên đơn giản và phù hợp hơn với các thực tiễn hiện đại trong Java, đặc biệt khi xử lý số lượng đối số thay đổi.
+
+Sau khi gọi phương thức swap(jungleDVD, cinderellaDVD), tiêu đề của hai đối tượng không thay đổi. Điều này xảy ra vì Java truyền tham chiếu theo giá trị, nghĩa là chỉ hoán đổi các bản sao tham chiếu trong phạm vi hàm. Các thay đổi này không ảnh hưởng đến tham chiếu gốc bên ngoài, vì vậy các đối tượng ban đầu vẫn giữ nguyên trạng thái.
+
+Ngược lại, sau khi gọi phương thức changeTitle(jungleDVD, cinderellaDVD.getTitle()), tiêu đề của jungleDVD thay đổi. Trong trường hợp này, phương thức thao tác trực tiếp lên đối tượng mà tham chiếu jungleDVD trỏ tới. Vì Java truyền tham chiếu đối tượng, nên khi thay đổi thuộc tính của đối tượng, sự thay đổi này sẽ được phản ánh ra bên ngoài.
